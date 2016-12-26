@@ -343,7 +343,7 @@ public class ManagementSystem {
     public static void printString(Object s) {
         //System.out.println(s.toString());
         try {
-            System.out.println(new String(s.toString().getBytes("windows-1251"), "windows-1252"));
+            System.out.println(new String(s.toString().getBytes("windows-1251"), "windows-1251"));
         } catch (UnsupportedEncodingException ex) {
             ex.printStackTrace();
         }
